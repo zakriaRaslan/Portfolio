@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:#eee;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    color: black;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navigation a{
+color: rgb(0, 0, 0);
+font-size: 1.1em;
+font-weight: 400;
+padding-left: 30px;
+text-decoration: none;
+}
+.navigation a:hover{
+    color: blue;
+    font-weight: 500;
+}
+section{
+    padding: 100px 150px;
+}
+.main-content{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(Images/BC_Bootcamps_Resources_How-to-Decide-If-Coding-is-Right-for-Me_3.7.22_FTR_24718e35be.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-content h2{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.main-content h2 span{
+    color: rgb(4, 0, 233);
+    
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main-content h3{
+    color: rgb(0, 0, 0);
+    background-color: #eee;
+    border-radius: 15px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: white ;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    transition: 0.7 ease;
+
+}
+.main-btn:hover{
+    background-color: rgb(20, 128, 250);
+    transform: scale(1.1);
+}
+.social-icons a{
+color: rgb(7, 46, 240);
+font-size: 1.7em;
+padding-right: 30px;
+}
+.title{
+    font-size: 2.2em;
+    font-weight: 800;
+    color: rgb(4, 4, 71);
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.card{
+    width: 21.25em;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 15px;
+    box-shadow: 0 5px 25px #bbb8b8;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1); 
+  
+}
+.icon{
+    font-size: 7em;
+    text-align: center;
+    color: rgb(4, 4, 71);
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    color: darkslateblue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: #eee;
+    margin-top: 200px;
+    
+}
+.projects .title{
+   
+    margin: 30px;
+    
+}
+.project-card{
+    background-color: #eee;
+    width: 22.25em;
+    padding: 25px;
+    margin: 15px;
+    overflow: hidden;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 10px;
+    transition: 0.7s ease;
+    min-height: 14em;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-img img{
+    width: 100%;
+}
+.project-card:hover .project-img{
+    opacity: .8;
+}
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: .8em;
+    font-weight: 500;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: .9em;
+}
+
+.more-details{
+    text-decoration: none;
+    color: rgb(19, 19, 206);
+}
+.more-details:hover{
+    color: rgb(66, 2, 126);
+}
+.card-contact .icon{
+    font-size: 4.5em;
+}
+.card-contact .info h3{
+    color: black;
+}
+.card-contact .info p{
+    font-size: 1.3em;
+}
+
+footer{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.footer-title span{
+    color: blue;
+}
+footer .social-icons{
+    font-size: .9em;
+    padding-right: 13px;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding:80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
